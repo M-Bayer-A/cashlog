@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CustomButton from "../shared/customButton";
+import CustomButton from "../shared/CustomButton";
 import CustomTextInput from "../shared/CustomTextInput";
 import { useDispatch, useSelector } from "react-redux";
 import { formSelector } from "../../../application/states/form/formSelector";

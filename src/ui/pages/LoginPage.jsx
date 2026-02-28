@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import CustomButton from "../components/shared/customButton";
+import CustomButton from "../components/shared/CustomButton";
 
 export default function LoginPage() {
   const navigate = useNavigate();

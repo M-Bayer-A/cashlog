@@ -1,6 +1,6 @@
 import CradentialsInputs from "../components/formPage/CredentialsInputs";
 import SalesInputs from "../components/formPage/SalesInputs";
-import CustomButton from "../components/shared/customButton";
+import CustomButton from "../components/shared/CustomButton";
 import CustomProgressBar from "../components/shared/CustomProgressBar";
 import ExpensesInputs from "../components/formPage/ExpensesInputs";
 import { useDispatch, useSelector } from "react-redux";
