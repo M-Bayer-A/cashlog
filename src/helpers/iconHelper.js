@@ -1,8 +1,7 @@
-export const customIcons = {
-  telegram: "telegram_icon.png",
-  github: "github_icon.png",
-};
+import telegramIcon from "../assets/icons/telegram_icon.png";
+import githubIcon from "../assets/icons/github_icon.png";
 
-export function getIcon(icon) {
-  return "src/assets/icons/" + icon;
-}
+export const customIcons = {
+  telegram: telegramIcon,
+  github: githubIcon,
+};

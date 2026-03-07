@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import CustomButton from "../components/shared/CustomButton";
-import { customIcons, getIcon } from "../../helpers/iconHelper";
 import CustomIconButton from "../components/shared/CustomIconButton";
+import { customIcons } from "../../helpers/iconHelper";
 
 export default function StartPage() {
   const navigate = useNavigate();
@@ -23,14 +23,14 @@ export default function StartPage() {
         <div className="flex flex-row gap-4">
           <CustomIconButton
             className={"w-12"}
-            icon={getIcon(customIcons.telegram)}
+            icon={customIcons.telegram}
             onClick={() =>
               window.open("https://t.me/Mohammad_Bayer_AlAli", "_blank")
             }
           />
           <CustomIconButton
             className={"w-12"}
-            icon={getIcon(customIcons.github)}
+            icon={customIcons.github}
             onClick={() =>
               window.open("https://github.com/M-Bayer-A", "_blank")
             }
