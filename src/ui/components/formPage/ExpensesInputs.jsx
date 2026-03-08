@@ -21,9 +21,9 @@ export default function ExpensesInputs() {
   const handleDelete = (id) => dispatch(deleteExpense({ id }));
   //
   const isAddButtonDisable = () => {
-    const isLabelEmpty = inputs.name == null || inputs.name == "";
+    const isNameEmpty = inputs.name == null || inputs.name == "";
     const isValueEmpty = inputs.value == null || inputs.value == "";
-    return isLabelEmpty || isValueEmpty;
+    return isNameEmpty || isValueEmpty;
   };
   //
   return (
@@ -47,7 +47,7 @@ export default function ExpensesInputs() {
           <CustomTextInput
             className={"w-full"}
             placeholder={"العنوان"}
-            value={inputs.label}
+            value={inputs.name}
             onChange={(value) => setInputs({ ...inputs, name: value })}
           />
           <CustomTextInput

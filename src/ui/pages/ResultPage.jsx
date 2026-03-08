@@ -11,8 +11,8 @@ export default function ResultPage() {
   const notes = useSelector(formSelector.notes);
   let sum = 0;
 
-  expenses.forEach((a) => (sum += a.value));
-  advances.forEach((a) => (sum += a.value));
+  expenses.forEach((a) => (sum += numberHelper.parseToNumber(a.value)));
+  advances.forEach((a) => (sum += numberHelper.parseToNumber(a.value)));
 
   const info = [
     {
