@@ -14,11 +14,11 @@ export default function ResultPage() {
   //
   const expensesSum = expenses.reduce(
     (acc, current) => acc + numberHelper.parseToNumber(current.value),
-    0,
+    0
   );
   const advancesSum = advances.reduce(
     (acc, current) => acc + numberHelper.parseToNumber(current.value),
-    0,
+    0
   );
   const innerSum =
     numberHelper.parseToNumber(sales.alAlmin) +
@@ -74,7 +74,7 @@ export default function ResultPage() {
   return (
     <div
       dir="rtl"
-      className="w-full md:w-100 flex flex-col gap-5 p-5 font-[Tajawal] list-inside"
+      className="w-full md:w-100 flex flex-col gap-5 py-10 px-5 font-[Tajawal] list-inside"
     >
       <hr />
       <div className="text-center">
@@ -107,6 +107,7 @@ export default function ResultPage() {
         <div className="w-0 grow border" />
         <SingleColTable label={"سِلف"} details={advances} />
       </div>
+      <hr />
     </div>
   );
 }
