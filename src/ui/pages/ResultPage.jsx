@@ -3,6 +3,8 @@ import { formSelector } from "../../application/states/form/formSelector";
 import numberHelper from "../../helpers/numberHelper";
 import SingleColTable from "../components/resultPage/SingleColTable";
 import Info from "../components/resultPage/Info";
+import { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
 
 export default function ResultPage() {
   //
@@ -71,11 +73,20 @@ export default function ResultPage() {
     },
   ];
   //
+  const ref = useRef();
+
+  const handlePrint = useReactToPrint({
+    contentRef: ref,
+  });
+  //
   return (
     <div
+      ref={ref}
       dir="rtl"
       className="w-full md:w-100 flex flex-col gap-5 py-10 px-5 font-[Tajawal] list-inside"
     >
+      <button onClick={handlePrint}>Print / Save PDF</button>
+
       <hr />
       <div className="text-center">
         <h1 className="text-2xl font-bold pb-2">
